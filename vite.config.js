@@ -15,12 +15,13 @@ export default {
   build: {
     rollupOptions: {
         input,
-        external: ['vue'],
+        //external: ['vue'],
         output: {
+            /*
             globals: {
                 vue: 'Vue'
             },
-            //assetFileNames: `${item.name}/[name].[ext]`,
+            */
             entryFileNames: () => '[name].js',
             dir: './dist'
         }
